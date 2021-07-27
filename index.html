@@ -1,178 +1,183 @@
-    <!DOCTYPE html>
-    <html lang="ko">
-    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
     <script src="lib/jquery-1.12.3.js"></script>
     <script src="script/script.js"></script>
     <title>남도맛기행</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="wrap" class="flex-container">
-        <header id="header">
-            <div id="headerLogo">
-                <a href="#"><img src="images/logo.png" alt="헤더로고이미지"></a>
+      <header id="header">
+        <div id="headerLogo">
+          <a href="#"><img src="images/logo.png" alt="헤더로고이미지" /></a>
+        </div>
+
+        <nav id="gnb">
+          <!-- div#mainMenu>li.mainL*4>a[href="#"]+ul.subMenu>li.subLi*3>a[href="#"] -->
+          <ul id="mainMenu">
+            <li class="mainLi">
+              <a href="#">협회소개</a>
+              <ul class="subMenu">
+                <li class="subLi"><a href="#">인사말</a></li>
+                <li class="subLi"><a href="#">명인</a></li>
+                <li class="subLi"><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li class="mainLi">
+              <a href="#">행사안내</a>
+              <ul class="subMenu">
+                <li class="subLi"><a href="#">요리경연대회</a></li>
+                <li class="subLi"><a href="#">전시참가</a></li>
+                <li class="subLi"><a href="#">참가신청</a></li>
+              </ul>
+            </li>
+            <li class="mainLi">
+              <a href="#">홍보마당</a>
+              <ul class="subMenu">
+                <li class="subLi"><a href="#">축제소식</a></li>
+                <li class="subLi"><a href="#">보도자료</a></li>
+                <li class="subLi"><a href="#">레시피</a></li>
+              </ul>
+            </li>
+            <li class="mainLi">
+              <a href="#">회원마당</a>
+              <ul class="subMenu">
+                <li class="subLi"><a href="#">Q&A</a></li>
+                <li class="subLi"><a href="#">사진갤러리</a></li>
+                <li class="subLi"><a href="#">공지사항</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- nav#gnb -->
+      </header>
+
+      <!-- #main #slide -->
+      <main id="main">
+        <div id="slide">
+          <div id="slideArea" class="flex-container">
+            <a href="#">
+              <img src="images/slide1.jpg" alt="슬라이드이미지1" />
+              <span>떠나요! 남도맛축제!</span>
+            </a>
+            <a href="#">
+              <img src="images/slide2.jpg" alt="슬라이드이미지2" />
+              <span>메타세콰이어길을 걸어요!</span>
+            </a>
+            <a href="#">
+              <img src="images/slide3.jpg" alt="슬라이드이미지3" />
+              <span>테마기행과 함께 즐겨요!</span>
+            </a>
+          </div>
+          <!-- div#slideArea -->
+        </div>
+        <!-- #main div#slide -->
+
+        <!-- #main #contents 시작 -->
+        <div id="contents" class="flex-container">
+          <div id="notice">
+            <button type="button" id="noticeBtn">공지사항</button>
+            <table>
+              <tbody>
+                <tr id="noticePopup">
+                  <td><a href="#">맛집 베스트 사진 선정</a></td>
+                  <td><a href="#">2020.03.14</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">남도맛집기행 도장깨기</a></td>
+                  <td><a href="#">2020.03.14</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">메타세콰이어길 축제오픈</a></td>
+                  <td><a href="#">2019.04.12</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">여수 아쿠아리움에서 온천을</a></td>
+                  <td><a href="#">2019.03.05</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="gallery">
+            <button type="button" id="galleryBtn">갤러리</button>
+            <div id="galleryImg">
+              <a href="#"><img src="images/icon1.jpg" alt="갤러리이미지1" /></a>
+              <a href="#"><img src="images/icon2.jpg" alt="갤러리이미지2" /></a>
+              <a href="#"><img src="images/icon3.jpg" alt="갤러리이미지3" /></a>
             </div>
+          </div>
 
+          <div id="banner">
+            <a href="#"><img src="images/banner.jpg" alt="배너이미지" /></a>
+          </div>
+        </div>
+        <!-- div#contents 끝-->
 
-            <nav id="gnb">
-                <!-- div#mainMenu>li.mainL*4>a[href="#"]+ul.subMenu>li.subLi*3>a[href="#"] -->
-                <ul id="mainMenu">
-                    <li class="mainLi">
-                        <a href="#">협회소개</a>
-                        <ul class="subMenu">
-                            <li class="subLi"><a href="#">인사말</a></li>
-                            <li class="subLi"><a href="#">명인</a></li>
-                            <li class="subLi"><a href="#">오시는길</a></li>
-                        </ul>
-                    </li>
-                    <li class="mainLi">
-                        <a href="#">행사안내</a>
-                        <ul class="subMenu">
-                            <li class="subLi"><a href="#">요리경연대회</a></li>
-                            <li class="subLi"><a href="#">전시참가</a></li>
-                            <li class="subLi"><a href="#">참가신청</a></li>
-                        </ul>
-                    </li>
-                    <li class="mainLi">
-                        <a href="#">홍보마당</a>
-                        <ul class="subMenu">
-                            <li class="subLi"><a href="#">축제소식</a></li>
-                            <li class="subLi"><a href="#">보도자료</a></li>
-                            <li class="subLi"><a href="#">레시피</a></li>
-                        </ul>
-                    </li>
-                    <li class="mainLi">
-                        <a href="#">회원마당</a>
-                        <ul class="subMenu">
-                            <li class="subLi"><a href="#">Q&A</a></li>
-                            <li class="subLi"><a href="#">사진갤러리</a></li>
-                            <li class="subLi"><a href="#">공지사항</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </nav> <!-- nav#gnb -->
-        </header>
-
-        <!-- #main #slide -->
-        <main id="main">
-            <div id="slide">
-                <div id="slideArea" class="flex-container">
-                    <a href="#"> <img src="images/slide1.jpg" alt="슬라이드이미지1">
-                    <span>떠나요! 남도맛축제!</span>
-                    </a>
-                    <a href="#"> <img src="images/slide2.jpg" alt="슬라이드이미지2">
-                        <span>메타세콰이어길을 걸어요!</span>
-                    </a>
-                    <a href="#"> <img src="images/slide3.jpg" alt="슬라이드이미지3">
-                        <span>테마기행과 함께 즐겨요!</span>
-                    </a>
-                </div>  <!-- div#slideArea -->
-            </div><!-- #main div#slide -->
-
-            <!-- #main #contents 시작 -->
-            <div id="contents" class="flex-container">
-                <div id="notice">
-                    <button type="button" id="noticeBtn">공지사항</button>
-                    <table>
-                        <tbody>
-                            <tr id="noticePopup">
-                                <td><a href="#">맛집 베스트 사진 선정</a></td>
-                                <td><a href="#">2020.03.14</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">남도맛집기행 도장깨기</a></td>
-                                <td><a href="#">2020.03.14</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">메타세콰이어길 축제오픈</a></td>
-                                <td><a href="#">2019.04.12</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">여수 아쿠아리움에서 온천을</a></td>
-                                <td><a href="#">2019.03.05</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div id="gallery">
-                    <button type="button" id="galleryBtn">갤러리</button>
-                    <div id="galleryImg">
-                        <a href="#"><img src="images/icon1.jpg" alt="갤러리이미지1"></a>
-                        <a href="#"><img src="images/icon2.jpg" alt="갤러리이미지2"></a>
-                        <a href="#"><img src="images/icon3.jpg" alt="갤러리이미지3"></a>
-                    </div>
-
-                    </div>
-
-                <div id="banner">
-                    <a href="#"><img src="images/banner.jpg" alt="배너이미지"></a>
-                </div>
-            </div> <!-- div#contents 끝-->
-
-            <!-- footer#footer시작 -->
-            <footer id="footer" class="flex-container">
-                <div id="footerLogo">
-                    <a href="#"><img src="images/logoFooter.png" alt="푸터로고이미지"></a>
-                </div>
-                <div id="footerArea">
-                    <div id="footerMenu">
-                        <ul id="footerMenu" class="flex-container">
-                            <li class="footerLi"><a href="#">테마기행소개</a></li>
-                            <li class="footerLi">|</li>
-                            <li class="footerLi"><a href="#">개인정보취급방침</a></li>
-                            <li class="footerLi">|</li>
-                            <li class="footerLi"><a href="#">이메일무단수집거부</a></li>
-                        </ul>
-                    </div>
-                    <div id="copyright">
-                        <p>
-                            COPYRIGHT &copy; by 남도맛기행 축제 ALL RIGHTS RESERVED
-                        </p>
-                    </div>
-                </div>
-            </footer><!-- footer#footer 끝-->
-        </main> <!-- main#main -->
-
-
-
-        <div id="popupBG">
-            <div id="popup">
-                <h3>[맛집 베스트 사진 콘테스트]</h3>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td><a href="#">1. 참가자격 :</a></td>
-                            <td><a href="#">누구나 참여 가능.</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">2. 작품내용 :</a></td>
-                            <td><a href="#">행복한 맛집 사진</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">3. 참가신청 :</a></td>
-                            <td><a href="#">2019. 6. 3(월) ~ 6. 7(금) 18:00까지 이메일접수</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">4. 상품권 :</a></td>
-                            <td><a href="#">4인가족 맛집 상품권</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div id="closeBtn">
-                    <button type="button">닫기</button>
-                </div>
+        <!-- footer#footer시작 -->
+        <footer id="footer" class="flex-container">
+          <div id="footerLogo">
+            <a href="#"
+              ><img src="images/logoFooter.png" alt="푸터로고이미지"
+            /></a>
+          </div>
+          <div id="footerArea">
+            <div id="footerMenu">
+              <ul id="footerMenu" class="flex-container">
+                <li class="footerLi"><a href="#">테마기행소개</a></li>
+                <li class="footerLi">|</li>
+                <li class="footerLi"><a href="#">개인정보취급방침</a></li>
+                <li class="footerLi">|</li>
+                <li class="footerLi"><a href="#">이메일무단수집거부</a></li>
+              </ul>
             </div>
-            <!-- #popup -->
-     
-        </div> <!-- div#PopupBG -->
+            <div id="copyright">
+              <p>COPYRIGHT &copy; by 남도맛기행 축제 ALL RIGHTS RESERVED</p>
+            </div>
+          </div>
+        </footer>
+        <!-- footer#footer 끝-->
+      </main>
+      <!-- main#main -->
 
-
-    </div> <!-- div#wrap -->
-</body></html>
+      <div id="popupBG">
+        <div id="popup">
+          <h3>[맛집 베스트 사진 콘테스트]</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td><a href="#">1. 참가자격 :</a></td>
+                <td><a href="#">누구나 참여 가능.</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2. 작품내용 :</a></td>
+                <td><a href="#">행복한 맛집 사진</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">3. 참가신청 :</a></td>
+                <td>
+                  <a href="#">2019. 6. 3(월) ~ 6. 7(금) 18:00까지 이메일접수</a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">4. 상품권 :</a></td>
+                <td><a href="#">4인가족 맛집 상품권</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="closeBtn">
+            <button type="button">닫기</button>
+          </div>
+        </div>
+        <!-- #popup -->
+      </div>
+      <!-- div#PopupBG -->
+    </div>
+    <!-- div#wrap -->
+  </body>
+</html>

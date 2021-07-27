@@ -13,6 +13,26 @@ $(function() {
 
     //   slideShow 시작 
 
+    setInterval (fnSlide, 3000);
+
+    function fnSlide() {
+
+        $("#slideArea").animate(
+            {"margin-left":"-800px"},
+            3000,
+            function() {
+                $("#slideArea>a:nth-child(1)").insertAfter("#slideArea>a:nth-child(3)");
+            //  = $("#slideArea").eq(0)
+                $("#slideArea").css({
+                    "margin-left":"0"
+                });
+
+            }
+        );
+    }
+   
+
+
 
 
 
