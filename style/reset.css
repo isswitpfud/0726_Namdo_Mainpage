@@ -11,10 +11,10 @@ body {
   background-color: #fff;
 }
 
-a:visited {
+a:link {
   color: #333;
 }
-a:link {
+a:visited {
   color: #333;
 }
 a:hover {
@@ -34,4 +34,13 @@ img {
 
 .flex-container {
   display: flex;
+}
+
+header,
+nav,
+contents,
+article,
+main,
+footer {
+  display: block;
 }
